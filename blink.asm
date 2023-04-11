@@ -95,43 +95,15 @@ main_loop
 
         ;; Increment B and then mask all but low 4 bits
         incb
-        andb #$1F
+        andb #$3
         jmp main_loop
 
 
 ;; Bit patterns for the hex digits 0-9 and A-F
 hexfont
-        FCB ~(_H)
-        FCB ~(_I)
-        FCB ~(0)
-        FCB ~(_N)
-        FCB ~(_O)
-        FCB ~(_T)
-        FCB ~(_T)
-        FCB ~(_I)
-        FCB ~(_N)
-        FCB ~(_G)
-        FCB ~(_H)
         FCB ~(_A)
-        FCB ~(_C)
-        FCB ~(0)
-        FCB ~(0)
-        FCB ~(0)
-        FCB ~(_H)
-        FCB ~(_I)
-        FCB ~(0)
-        FCB ~(_N)
-        FCB ~(_O)
-        FCB ~(_T)
-        FCB ~(_T)
-        FCB ~(_I)
-        FCB ~(_N)
-        FCB ~(_G)
-        FCB ~(_H)
-        FCB ~(_A)
-        FCB ~(_C)
-        FCB ~(0)
-        FCB ~(0)
+        FCB ~(_R)
+        FCB ~(_F)
         FCB ~(0)
 
 
